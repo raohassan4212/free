@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Free
+-name: Free
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -31,5 +31,5 @@ jobs:
       - name: Intalling Surge
         run: npm install --globle surge
       - name: Deploying using surge
-        run: surge login /home/rao/Desktop/free free1.surge.sh $ {{ secrets.TOKEN }}
+        run: surge /home/rao/Desktop/free free1.surge.sh $ {{ secrets.TOKEN }}
   
