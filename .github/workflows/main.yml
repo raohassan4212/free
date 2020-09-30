@@ -31,5 +31,5 @@ jobs:
       - name: Intalling Surge
         run: npm install --globle surge
       - name: Deploying using surge
-        run: surge /home/rao/Desktop/free/ free1.surge.sh $ {{ secrets.TOKEN }}
+        run: surge /home/rao/Desktop/free free1.surge.sh $ {{ secrets.TOKEN }}
   
